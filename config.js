@@ -74,6 +74,20 @@ const FRIENDS_CONFIG = {
         "You sharing news about your US Visa."
       ]
     },
+    {
+      firstName: "Rakshyak",
+      lastName: "Bhattarai",
+      nickname: "Handsome bhai",
+      password: "paduwa",
+      finalMessage: "Happy New Year 2026 kancho. I am super greatful I got to meet you in 2025 and see parts of the world together. 2025 might have taught us some lessons but I hope we both grow from those lessons and create a beautiful 2026. Yo barsha taile chayeako sabbai kura pura hoss, tero health better hoss and feri vetne oppurtunity milos. Have a supper amazing year and as always, I am her with you to support when you need me.💕",
+      memories: [
+        "Meeting you for the first time after 7 years",
+        "Celeberating Dashain and Bhai Tika with you after many years.",
+        "Scooty rides and Anmol KC ko flim haha.",
+        "Our first international travel together.",
+        "And all the good food, places, and things we shared together."
+      ]
+    },
 
     // Example: Another individual
     {
