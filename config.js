@@ -36,15 +36,15 @@ const FRIENDS_CONFIG = {
     {
       firstName: "Aasmi",
       lastName: "Joshi",
-      password: "suki",
-      finalMessage: "Happy New Year mero baini, this year has been truly wonderful with you and I am super exicited to enter 2026 together. I hope this year brings manny good news for yourself, I really hope you get selected for the best possible program and get to meet your family soon. Dherai kamaunu, suddha khanu ani gyani bannu. Thank you for always loving and being part of my greatful world.💕✨🎊",
+      password: "sutuwai",
+      finalMessage: "Happy New Year mero baini, this year has been truly wonderful with you and I am super exicited to enter 2026 together. I hope this year brings many good news for yourself, I really hope you get selected for the best possible program and get to meet your family soon. Dherai kamaunu, suddha khanu ani gyani bannu. Thank you for always loving and being part of my greatful world.💕✨🎊",
       memories: [
-        "I am super greatful I got to live with you in same living space with you in 2025.",
+        "I am super greatful I got to live with you in same living space in 2025.",
         "The early morning birthday surprise you gave me was super special and memorable.",
         "All the process and banter of making this apartment a home, our home.",
         "Virtually nai vhaye pani we celebrated Thiar this year.",
         "All our facetimes, gossips or lets call it behavior analyzation.",
-        "Every minute I spent with you."
+        "Every minute I spent with you, everything you did for me and everything I got to do for you."
       ]
     },
 
@@ -53,13 +53,13 @@ const FRIENDS_CONFIG = {
       firstName: "Divya",
       lastName: "Koirala",
       password: "danka",
-      finalMessage: "Happy New Year sweetheart 2025 was amazing with you and I wish to make 2026 even more memorable. I hope we get to spend more time together and create more meaningful memories. Thank you for taking care of me when I needed and celeberating me this year. Cheers to an amazing year ahead full of love, laughter, luck and peace.💕🎊",
+      finalMessage: "Happy New Year sweetheart. 2025 was amazing with you and I wish to make 2026 even more memorable. I hope we get to spend more time together and create more meaningful memories. Thank you for taking care of me when I needed and celeberating me this year. Cheers to an amazing year ahead full of love, laughter, luck and peace. I wish you growth on your career and geniune love around you.💕🎊",
       memories: [
         "Celebrating my birthday together and trying the bogger gummies lmao.",
         "Our sleepovers and late night talks.",
-        "Seeing you in Bhairahawa airport was super special to me.",
+        "You surprising me in Bhairahawa airport was super special to me.",
         "Our trip to Golpark to try chatpate and sagg sukiti.",
-        "You always being there for me when I need you and listening to me."
+        "You always being there for me when I needed you and always listening to me."
       ]
     },
 
