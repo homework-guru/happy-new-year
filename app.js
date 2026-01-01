@@ -9,8 +9,9 @@ const envelopeScreen = document.getElementById('envelopeScreen');
 const loginForm = document.getElementById('loginForm');
 const errorMessage = document.getElementById('errorMessage');
 
-// Current user data
+// Current user data (received from server after login)
 let currentUser = null;
+let senderName = '';
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', () => {
@@ -48,38 +49,47 @@ function setupEventListeners() {
     envelope.addEventListener('click', openEnvelope);
 }
 
-// Handle login form submission
-function handleLogin(e) {
+// Handle login form submission - uses server-side authentication
+async function handleLogin(e) {
     e.preventDefault();
 
     const firstName = document.getElementById('firstName').value.trim();
     const lastName = document.getElementById('lastName').value.trim();
     const password = document.getElementById('password').value;
 
-    // Find matching friend in config (supports individuals and families with different last names)
-    const friend = FRIENDS_CONFIG.friends.find(f => {
-        const passwordMatch = f.password === password;
+    // Disable form while loading
+    const submitBtn = loginForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.textContent;
+    submitBtn.textContent = 'Loading...';
+    submitBtn.disabled = true;
 
-        // Check if this is the first person
-        const isPerson1 =
-            f.firstName.toLowerCase() === firstName.toLowerCase() &&
-            f.lastName.toLowerCase() === lastName.toLowerCase();
+    try {
+        // Call server API for authentication
+        const response = await fetch('/api/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ firstName, lastName, password })
+        });
 
-        // Check if this is the second person (for families/couples)
-        const isPerson2 = f.firstName2 &&
-            f.firstName2.toLowerCase() === firstName.toLowerCase() &&
-            (f.lastName2
-                ? f.lastName2.toLowerCase() === lastName.toLowerCase()
-                : f.lastName.toLowerCase() === lastName.toLowerCase());
+        const data = await response.json();
 
-        return passwordMatch && (isPerson1 || isPerson2);
-    });
-
-    if (friend) {
-        currentUser = friend;
-        showPostcard();
-    } else {
-        showError('Invalid credentials. Please check your name and password.');
+        if (data.success) {
+            // Store user data from server (password is never sent back)
+            currentUser = data.user;
+            senderName = data.senderName;
+            showPostcard();
+        } else {
+            showError(data.error || 'Invalid credentials. Please check your name and password.');
+        }
+    } catch (error) {
+        console.error('Login error:', error);
+        showError('Connection error. Please try again.');
+    } finally {
+        // Re-enable form
+        submitBtn.textContent = originalBtnText;
+        submitBtn.disabled = false;
     }
 }
 
@@ -138,7 +148,7 @@ function switchScreen(from, to) {
 function showPostcard() {
     // Populate postcard data with full name (handles families)
     document.getElementById('recipientName').textContent = getDisplayName(currentUser);
-    document.getElementById('senderName').textContent = FRIENDS_CONFIG.senderName;
+    document.getElementById('senderName').textContent = senderName;
 
     switchScreen(loginScreen, postcardScreen);
 }
@@ -154,7 +164,7 @@ function showEnvelope() {
 
     document.getElementById('letterRecipient').textContent = greeting;
     document.getElementById('letterMessage').textContent = currentUser.finalMessage;
-    document.getElementById('letterSender').textContent = FRIENDS_CONFIG.senderName;
+    document.getElementById('letterSender').textContent = senderName;
 
     // Setup memories section if available
     const memoriesButton = document.getElementById('memoriesButton');
