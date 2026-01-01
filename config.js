@@ -39,8 +39,12 @@ const FRIENDS_CONFIG = {
       password: "suki",
       finalMessage: "Happy New Year mero baini, this year has been truly wonderful with you and I am super exicited to enter 2026 together. I hope this year brings manny good news for yourself, I really hope you get selected for the best possible program and get to meet your family soon. Dherai kamaunu, suddha khanu ani gyani bannu. Thank you for always loving and being part of my greatful world.💕✨🎊",
       memories: [
-        "Our late night chai sessions 🍵",
-        "Shopping adventures at the mall 🛍️"
+        "I am super greatful I got to live with you in same living space with you in 2025.",
+        "The early morning birthday surprise you gave me was super special and memorable.",
+        "All the process and banter of making this apartment a home, our home.",
+        "Virtually nai vhaye pani we celebrated Thiar this year.",
+        "All our facetimes, gossips or lets call it behavior analyzation.",
+        "Every minute I spent with you."
       ]
     },
 
@@ -51,11 +55,11 @@ const FRIENDS_CONFIG = {
       password: "danka",
       finalMessage: "Happy New Year sweetheart 2025 was amazing with you and I wish to make 2026 even more memorable. I hope we get to spend more time together and create more meaningful memories. Thank you for taking care of me when I needed and celeberating me this year. Cheers to an amazing year ahead full of love, laughter, luck and peace.💕🎊",
       memories: [
-        "Our first meetup ☕",
-        "Birthday celebrations 🎂",
-        "Long phone calls 📱",
-        "Road trips together 🚗",
-        "Supporting each other always 💪"
+        "Celebrating my birthday together and trying the bogger gummies lmao.",
+        "Our sleepovers and late night talks.",
+        "Seeing you in Bhairahawa airport was super special to me.",
+        "Our trip to Golpark to try chatpate and sagg sukiti.",
+        "You always being there for me when I need you and listening to me."
       ]
     },
 
@@ -86,6 +90,24 @@ const FRIENDS_CONFIG = {
         "Scooty rides and Anmol KC ko flim haha.",
         "Our first international travel together.",
         "And all the good food, places, and things we shared together."
+      ]
+    },
+
+    {
+      firstName: "Binu",
+      lastName: "Gaire",
+      firstName2: "Aashish",
+      lastName: "Nepal",
+      nickname: "Didi",
+      nickname2: "Dai",
+      password: "dhanididi",
+      finalMessage: "Happy New Year 2026. Yo barsha hajur haru ko lagi sukha, shanti, samriddhi, swasthya, ra hajur haru leh chayeako sampurna chahana haru leh bharios. Dherai dherai maya.",
+      memories: [
+        "All the fun games we played together. Especialy the bogger gummies one.",
+        "Celebrating all events and festivals together.",
+        "Bouddha and Bhaktapur ma ghumeko.",
+        "Butwal ko sekuwa try gareko and getting to know you better.",
+        "You sharing news about your US Visa."
       ]
     },
 
