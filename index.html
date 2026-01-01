@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Message For You</title>
+  <meta name="description" content="A heartfelt personalized message just for you">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Floating Hearts Background -->
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <!-- Screen 1: Login -->
+  <section class="screen active" id="loginScreen">
+    <div class="login-card">
+      <div class="card-decoration">✉️</div>
+      <h1 class="login-title">A Special Message Awaits</h1>
+      <p class="login-subtitle">Enter your name and password to reveal your surprise</p>
+
+      <form id="loginForm" class="login-form">
+        <div class="input-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name"
+            autocomplete="given-name">
+        </div>
+
+        <div class="input-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name"
+            autocomplete="family-name">
+        </div>
+
+        <div class="input-group">
+          <label for="password">Secret Password</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your secret password">
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <button type="submit" class="btn-submit">
+          <span>Reveal Message</span>
+          <span class="btn-icon">→</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Screen 2: Simple From/To Card -->
+  <section class="screen" id="postcardScreen">
+    <div class="simple-card">
+      <div class="simple-card-badge">2025</div>
+
+      <div class="simple-card-content">
+        <p class="simple-card-from">From: <span id="senderName">Rachna</span></p>
+        <p class="simple-card-to">To: <span id="recipientName"></span></p>
+      </div>
+
+      <button class="simple-card-button" id="clickPrompt">
+        <span>Continue</span>
+        <span>→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Screen 3: Yellow Pastel Envelope -->
+  <section class="screen" id="envelopeScreen">
+    <!-- Floating confetti decorations -->
+    <div class="confetti-bg" id="confettiBg"></div>
+
+    <div class="envelope-container">
+      <p class="envelope-prompt">Open your special message...</p>
+
+      <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <div class="envelope-heart">❤️</div>
+          <div class="envelope-letter" id="envelopeLetter">
+            <div class="letter-content">
+              <!-- SVG Scribble Frame -->
+              <svg class="scribble-frame" viewBox="0 0 400 500" preserveAspectRatio="none">
+                <path
+                  d="M15,10 Q5,10 10,20 Q8,100 12,200 Q7,300 15,400 Q10,480 20,490 Q100,495 200,488 Q300,493 380,490 Q390,485 388,400 Q393,300 390,200 Q395,100 388,20 Q392,8 380,10 Q300,5 200,12 Q100,7 20,10 Q12,10 15,10"
+                  fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" />
+                <path
+                  d="M18,15 Q12,18 14,50 Q10,150 16,250 Q12,350 18,450 Q14,478 25,482 Q120,487 200,480 Q280,485 375,482 Q383,478 380,400 Q386,280 382,150 Q388,50 380,18 Q375,12 300,16 Q200,10 100,17 Q30,12 18,15"
+                  fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+              </svg>
+              <div class="letter-inner">
+                <p class="letter-greeting">Dear <span id="letterRecipient"></span>,</p>
+                <p class="letter-message" id="letterMessage"></p>
+                <p class="letter-signature">With love,<br><span id="letterSender"></span></p>
+                <div class="letter-decoration">Happy New Year 2025</div>
+
+                <!-- Memories Section -->
+                <button class="memories-button" id="memoriesButton" style="display: none;">
+                  <span class="memories-icon">💝</span>
+                  <span>My Favourite Memories With You</span>
+                  <span class="memories-arrow">▼</span>
+                </button>
+
+                <div class="memories-list" id="memoriesList" style="display: none;">
+                  <ul id="memoriesContent"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="tap-hint" id="tapHint">Tap the envelope to open</p>
+    </div>
+  </section>
+
+  <!-- Confetti Container -->
+  <div class="confetti-container" id="confettiContainer"></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
