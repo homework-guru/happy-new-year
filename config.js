@@ -75,7 +75,7 @@ const FRIENDS_CONFIG = {
       ]
     },
     {
-      firstName: "Rakshyak",
+      firstName: "Rakshak",
       lastName: "Bhattarai",
       nickname: "Handsome bhai",
       password: "paduwa",
