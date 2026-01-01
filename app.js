@@ -84,6 +84,7 @@ function handleLogin(e) {
 }
 
 // Get display name (handles individuals and families with different last names)
+// Always uses firstName for the "To:" card - nickname is only for letter greeting
 function getDisplayName(user) {
     if (user.firstName2) {
         if (user.lastName2 && user.lastName2 !== user.lastName) {
@@ -145,9 +146,11 @@ function showPostcard() {
 // Show envelope screen
 function showEnvelope() {
     // Populate envelope data (handles families)
+    // Uses nickname if present for the greeting
+    const name1 = currentUser.nickname || currentUser.firstName;
     const greeting = currentUser.firstName2
-        ? `${currentUser.firstName} & ${currentUser.firstName2}`
-        : currentUser.firstName;
+        ? `${name1} & ${currentUser.nickname2 || currentUser.firstName2}`
+        : name1;
 
     document.getElementById('letterRecipient').textContent = greeting;
     document.getElementById('letterMessage').textContent = currentUser.finalMessage;

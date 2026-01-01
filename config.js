@@ -4,24 +4,26 @@
  * Edit this file to add your friends and their personalized messages!
  * 
  * For INDIVIDUALS:
- *   - firstName: Their first name
- *   - lastName: Their last name
+ *   - firstName: Their first name (used for login)
+ *   - lastName: Their last name (used for login)
+ *   - nickname: (optional) Display name instead of firstName (e.g., "Suki" instead of "Aasmi")
  *   - password: The secret password you give them
  *   - finalMessage: The message revealed in the envelope
  *   - memories: (optional) Array of favorite memories with this person
  * 
  * For FAMILIES/COUPLES (two members):
- *   - firstName: First person's name (e.g., "Mike")
- *   - lastName: First person's last name (e.g., "Johnson")
- *   - firstName2: Second person's name (e.g., "Sarah")
- *   - lastName2: Second person's last name (optional, if different from lastName)
+ *   - firstName: First person's name (used for login)
+ *   - lastName: First person's last name (used for login)
+ *   - nickname: (optional) Display nickname for first person
+ *   - firstName2: Second person's name (used for login)
+ *   - lastName2: (optional) Second person's last name if different
+ *   - nickname2: (optional) Display nickname for second person
  *   - password: The secret password
  *   - finalMessage: The message for the family
  *   - memories: (optional) Array of favorite memories
  *   
  *   Login: Either member can enter their name + password
- *   Display: Shows as "Mike Johnson & Sarah Smith" (if different last names)
- *            or "Mike & Sarah Johnson" (if same last name)
+ *   Display: Uses nickname if present, otherwise firstName
  */
 
 const FRIENDS_CONFIG = {
@@ -61,8 +63,9 @@ const FRIENDS_CONFIG = {
     {
       firstName: "Roshani",
       lastName: "Acharya",
+      nickname: "Didi",
       password: "ml/ai",
-      finalMessage: "Happy New Year 2026 didi, I am super excited to meet you this year and create memories together. I hope this year brings you peace, good health, lots of opportunities and protection. ",
+      finalMessage: "Happy New Year 2026, I am super excited to meet you this year and create memories together. I hope this year brings you peace, good health, lots of opportunities and protection. Love you",
       memories: [
         "Meeeting you for the first time in Kathmandu.",
         "Visitin your childhood home.",
