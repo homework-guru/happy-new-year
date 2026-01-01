@@ -111,9 +111,9 @@ const FRIENDS_CONFIG = {
       nickname: "Didi",
       nickname2: "Dai",
       password: "dhanididi",
-      finalMessage: "Happy New Year 2026. Yo barsha hajur haru ko lagi sukha, shanti, samriddhi, swasthya, ra hajur haru leh chayeako sampurna chahana haru leh bharios. Dherai dherai maya.",
+      finalMessage: "Happy New Year 2026. Yo barsha hajur haru ko lagi sukha, shanti, samriddhi, swasthya, ra hajur haru leh chayeako sampurna chahana haru leh bhari purna rahos. Dherai dherai maya.",
       memories: [
-        "All the fun games we played together. Especialy the bogger gummies one.",
+        "All the fun games we played together. Especialy the bogger gummies one lmao.",
         "Celebrating all events and festivals together."
       ]
     },
