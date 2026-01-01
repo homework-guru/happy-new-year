@@ -92,7 +92,17 @@ const FRIENDS_CONFIG = {
         "And all the good food, places, and things we shared together."
       ]
     },
-
+    {
+      firstName: "Rojee",
+      lastName: "Acharya",
+      password: "primsi",
+      finalMessage: "Happy New Year 2026. I hope this year bring wonderful opportunities for you to explore different creative hobbies, travel more, spend more time with your siblings, good grades and lots of happiness. Remember always to be gentle to yourself and stay healthy..💕",
+      memories: [
+        "I am super greatful for the efforts you put on my birthday to celeberate together.",
+        "We tried multiple new food places this year and I enjoyed your company.",
+        "I loved how you surprised me with your good gesture and made effort to initiate our meetups."
+      ]
+    },
     {
       firstName: "Binu",
       lastName: "Gaire",
@@ -104,10 +114,20 @@ const FRIENDS_CONFIG = {
       finalMessage: "Happy New Year 2026. Yo barsha hajur haru ko lagi sukha, shanti, samriddhi, swasthya, ra hajur haru leh chayeako sampurna chahana haru leh bharios. Dherai dherai maya.",
       memories: [
         "All the fun games we played together. Especialy the bogger gummies one.",
-        "Celebrating all events and festivals together.",
-        "Bouddha and Bhaktapur ma ghumeko.",
-        "Butwal ko sekuwa try gareko and getting to know you better.",
-        "You sharing news about your US Visa."
+        "Celebrating all events and festivals together."
+      ]
+    },
+    {
+      firstName: "Bikash",
+      lastName: "Sharma",
+      firstName2: "Erika",
+      lastName: "Pande",
+      password: "maharani",
+      finalMessage: "Happy New Year 2026. I hope you guys have a wonderful year full of travel, lots of money, and maybe babies hahaha. Thank you for being a part of my life.",
+      memories: [
+        "Our Vegas trip and helicopter ride.",
+        "Getting to be a part of your proposal and mariage.",
+        "All of our game nights and celebrations.",
       ]
     },
 
