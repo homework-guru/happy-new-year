@@ -67,10 +67,10 @@ const FRIENDS_CONFIG = {
       password: "ml/ai",
       finalMessage: "Happy New Year 2026, I am super excited to meet you this year and create memories together. I hope this year brings you peace, good health, lots of opportunities and protection. Love you",
       memories: [
-        "Meeeting you for the first time in Kathmandu.",
+        "Meeting you for the first time in Kathmandu.",
         "Visitin your childhood home.",
-        "Bauddha and Bhaktapur ma ghumeako.",
-        "Butwal ko sekewa try gareako and getting to know you better.",
+        "Bouddha and Bhaktapur ma ghumeko.",
+        "Butwal ko sekuwa try gareko and getting to know you better.",
         "You sharing news about your US Visa."
       ]
     },
