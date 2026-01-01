@@ -107,7 +107,7 @@ const FRIENDS_CONFIG = {
       firstName: "Binu",
       lastName: "Gaire",
       firstName2: "Aashish",
-      lastName: "Nepal",
+      lastName2: "Nepal",
       nickname: "Didi",
       nickname2: "Dai",
       password: "dhanididi",
@@ -121,7 +121,7 @@ const FRIENDS_CONFIG = {
       firstName: "Bikash",
       lastName: "Sharma",
       firstName2: "Erika",
-      lastName: "Pande",
+      lastName2: "Pande",
       password: "maharani",
       finalMessage: "Happy New Year 2026. I hope you guys have a wonderful year full of travel, lots of money, and maybe babies hahaha. Thank you for being a part of my life.",
       memories: [
