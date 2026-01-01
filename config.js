@@ -96,7 +96,7 @@ const FRIENDS_CONFIG = {
       firstName: "Rojee",
       lastName: "Acharya",
       password: "primsi",
-      finalMessage: "Happy New Year 2026. I hope this year bring wonderful opportunities for you to explore different creative hobbies, travel more, spend more time with your siblings, good grades and lots of happiness. Remember always to be gentle to yourself and stay healthy..💕",
+      finalMessage: "Happy New Year 2026. I hope this year bring wonderful opportunities for you to explore ajjai dherai creative hobbies, travel more, spend more time with your siblings, good grades and lots of happiness. Remember always to be gentle to yourself and stay healthy.💕",
       memories: [
         "I am super greatful for the efforts you put on my birthday to celeberate together.",
         "We tried multiple new food places this year and I enjoyed your company.",
